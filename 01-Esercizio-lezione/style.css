@@ -1,0 +1,301 @@
+/* ****************************************************** */
+/* RESET STYLE */
+/* ****************************************************** */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+/* ****************************************************** */
+/* GENERAL */
+/* ****************************************************** */
+    
+body{
+    font-size: 16px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 100%;
+    min-width: 320px;
+    max-width: 1200px;
+    height: 100%;
+    margin: auto 0;
+    
+    margin: 0 auto;
+}
+
+.form__main{
+    background-color: rgb(226, 226, 226);
+    margin: 0 auto;
+    padding: 5% 10% 5% 10%;
+    box-sizing: content-box;
+}
+
+label > span{
+    color: red;
+    font-size: 1.1rem;
+}
+
+.form__item-row{
+    display: flex;
+    flex-direction: column;
+
+}
+.form__item-row > div{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.form__section, .form__section > div{
+    display: flex;
+    flex-direction: column;
+}
+
+.form__section_full{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+    /* ****************************************************** */
+    /* FORM*/
+    /* ****************************************************** */
+
+    /* form{
+        max-width: ;
+        margin: 0 auto;
+    } */
+
+    form > div label{
+        margin-top: 0.8rem;
+        margin-bottom: 0.3rem;
+        color: rgb(100, 100, 100);
+        font-weight: lighter;
+    }
+
+    form > div input{
+        background-color: #FFFFFF;
+        border-style: none;
+        min-height: 2rem;
+    }
+
+    form > div textarea{
+        background-color: #FFFFFF;
+        border-style: none;
+    }
+
+
+    /* ****************************************************** */
+    /* FORM HEAD*/
+    /* ****************************************************** */
+
+    .form-head{
+        padding: 1rem 0;
+    }
+
+    .form-head > h1{
+        text-align: center;
+    }
+
+    /* ****************************************************** */
+    /* FORM LEFT */
+    /* ****************************************************** */
+
+    .form__left{
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .form__left > div{
+        display: flex;
+        flex-direction: column;
+        
+        margin-top: 0.8rem;
+    }
+
+    /* ****************************************************** */
+    /* FORM RIGHT */
+    /* ****************************************************** */
+
+    .form__right{
+        display: flex;
+        flex-direction: column;
+      
+    }
+
+    .updphoto{
+        background-color: #ffffff;
+        margin-top: 1rem;
+    }
+
+    .updphoto-header{
+        border-bottom: 0.1rem solid #d1d1d1;
+        width: 100%;
+        margin-top: 1.5rem;
+        margin-bottom: 0.5rem;
+        padding-bottom: 1.2rem;
+    }
+
+    .updphoto-header > h3{
+        text-align: center;
+        font-size: 1.5rem;
+
+    }
+
+    .updphoto-main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0.5rem 2rem 2rem 2rem;
+    }
+
+    .updphoto-main > span{
+        font-size: 9.5rem;
+        border: 0.7rem solid #000000;
+        border-radius: 3rem;
+        background-color: rgb(241, 241, 241);
+        
+    }
+
+    .updphoto-main > button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #0787ff;
+        font-size: 1rem;
+        margin: 0 2rem;
+        padding: 0.5rem 2rem;
+        background-color: #FFFFFF;
+        border: 0.1rem solid lightgray;
+
+        border-radius: 5px;
+    }
+
+    .updphoto-main > button:hover{
+        background-color: #f0f0f0;
+    }
+
+    .updphoto-main > p {
+        text-align: center;
+        margin: 0.9rem 0;
+    }
+
+    .updphoto > hr {
+        border-top: 2px solid #000000;
+    }
+
+
+
+    
+
+    /* ****************************************************** */
+    /* FORM__footer */
+    /* ****************************************************** */
+    
+    .form__footer{
+        margin: 1rem auto;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .form__footer{
+        display: flex;
+
+    }
+
+    .form__footer input{
+
+        color: #0787ff;
+        font-size: 1rem;
+        margin: 0.5rem 2rem;
+        padding: 0.7rem 2.2rem;
+        background-color: #ffffff;
+        border: 0.1rem solid lightgray;
+
+        border-radius: 5px;
+    }
+
+    .form__footer input:hover{
+        background-color: #f0f0f0;
+    }
+
+    .form__footer input[type="submit"]{
+
+        color: #FFFFFF;
+        font-size: 1rem;
+        margin: 0.5rem 2rem;
+        padding: 0.7rem 2.2rem;
+        background-color: #0787ff;
+
+        border-radius: 5px;
+    }
+
+    .form__footer input[type="submit"]:hover{
+        background-color: #3ca1ff;
+    }
+
+    /* ****************************************************** */
+    /* MEDIA QUERY SECTION */
+    /* ****************************************************** */
+
+    @media screen and (min-width: 1024px) {
+
+
+        .form__main{
+            padding: 3% 5%;
+        }
+
+        .form__section{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+        }
+
+
+        .form__left{
+            display: flex;
+            flex-direction: column;
+            align-content: space-around;
+        }
+
+        .form__left > div{
+            margin: 0;;
+        }
+
+        .form__footer{
+            justify-content: right;
+            margin: 0.8rem 2rem;
+        }
+
+        .form__item-row{
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 1rem;
+
+        }
+
+        form > div input{
+            min-height: 2.5rem;
+        }
+
+        .updphoto-main{
+            padding: 0.5rem 2rem 1.8rem 2rem;
+        }
+
+
+        .updphoto-main > p:last-child{
+            margin-top: 1.5rem;
+            margin-bottom: 0;
+        }
+
+        form > div label[for="street"] {
+            margin-top: 1.2rem;
+        }
+
+    }

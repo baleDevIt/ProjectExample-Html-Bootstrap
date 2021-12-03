@@ -1,0 +1,271 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    margin: 1% auto;
+    width: 95%;
+    font-size: 16px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+    background-color: rgb(240, 240, 240);
+}
+
+main{
+    margin: 0 auto;
+    width: 95%;
+}
+
+h1{
+    font-size: 2.2rem;
+    color: rgb(102, 102, 102);
+}
+
+.display{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+}
+
+.display h2{
+    font-size: 3.5rem;
+    font-weight: lighter;
+}
+
+.display h3{
+    padding-left: 0.3rem;
+    font-size: 1.1rem;
+    font-weight: lighter;
+}
+
+.display-right h4{
+    color: rgb(104, 104, 104);
+}
+
+.display-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #FFFFFF;
+    padding: 4vh 10vh;
+}
+
+.display-right p{
+    font-size: 2rem;
+}
+
+.display-right > *{
+    margin: 0.5vh;
+}
+
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+    padding: 01rem;
+    
+}
+
+nav a{
+    text-decoration: none;
+    color: rgb(90, 90, 90);
+}
+
+
+nav a:hover{
+    text-decoration: none;
+    color: rgb(119, 119, 119);
+}
+
+.nav__left{
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1rem;
+}
+
+.nav__left > *{
+    margin-left: 2rem;
+
+}
+
+.nav-selector{
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+}
+
+.nav-selector > *{
+    margin-left: 0.5rem;
+}
+
+.nav-selector select{
+    padding: 0.5rem 1rem 0.5rem 0.2rem;
+    font-size: 1rem;
+
+    text-align: left;
+    color: rgb(90, 90, 90);
+    border: 0.1rem solid rgb(221, 221, 221);
+    background-color: #FFFFFF;
+
+}
+
+.nav-selector select:hover{
+    background-color: rgb(243, 243, 243);
+}
+
+.nav-selector__link{
+    font-size: 0.9rem;
+    color: rgb(55, 55, 231);
+}
+
+.nav-selector__link:hover{
+    color: rgb(33, 33, 161);
+}
+
+.nav__left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-traveler{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.nav-traveler > button{
+    text-decoration: none;
+    font-size: 1.1rem;
+    color: rgb(156, 156, 156);
+    border: 0.1rem solid rgb(221, 221, 221);
+    border-radius: 5%;
+    padding: 0.7rem 1rem;
+    margin: 0;
+    background-color: #FFFFFF;
+}
+
+.nav-traveler > button:hover{
+    background-color: rgb(243, 243, 243);
+}
+
+
+#previous{
+    background-color: #dadada;
+    color: rgb(95, 95, 95);
+
+}
+
+#previous:hover{
+    background-color: rgb(243, 243, 243);
+
+}
+
+#now{
+    background-color: #17aa1c;
+    color: #FFFFFF;
+}
+
+#now:hover{
+    background-color: #1eca24;
+    color: #FFFFFF;
+}
+
+table{
+    width: 100%;
+    height: 100%;
+    border-collapse: collapse;
+    background-color: #FFFFFF;
+}
+
+thead{
+    background-color: #e2e2e2;
+    text-align: left;
+
+}
+
+
+
+th{
+    border: 0.1rem solid rgb(146, 146, 146);
+    height: 4rem;
+    padding: 0.7rem 0.5rem;
+    vertical-align: bottom;
+}
+
+td{
+    border: 0.1rem solid rgb(146, 146, 146);
+    height: 4rem;
+    padding: 0.7rem 0.5rem;
+    vertical-align: super;
+    line-height: 1.5rem;
+}
+
+td:last-child{
+    color: rgb(53, 53, 255);
+}
+
+.table-value{
+    text-align: right;
+}
+
+#nav-button{
+    visibility: hidden;
+}
+
+
+@media only screen and (max-width: 1024px) {
+    nav {
+        flex-direction: column-reverse;
+        align-items: space-around;
+        justify-content: center;
+    }
+
+    .display {
+        flex-direction: column;
+        justify-items: center;
+    }
+
+    .display > *:last-child{
+        margin-top: 5vw;
+    }
+
+    .display-left, .display-right{
+        text-align: center;
+    }
+
+    table{
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+
+
+
+    #nav-button{
+        visibility: visible;
+    }
+
+    #nav-top{
+        visibility: hidden;
+    }
+
+
+
+}
+
+

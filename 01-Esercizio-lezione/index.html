@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+</head>
+<body>
+
+    <form action="#" method="post">
+        <div class="form-head">
+            <h1>Edit User</h1>
+        </div>
+        <div class="form__main">
+            <!-- FORM Section TOP -->
+            <div class="form__section">
+                <div class="form__left">
+                    <label for="name">First Name</label>
+                    <input type="text" name="name" id="name">
+                    <label for="surname">Last Name</label>
+                    <input type="text" name="surname" id="surname">
+                    <label for="title">Title</label>
+                    <input type="text" name="title" id="title">
+                    <label for="email"><span>*</span>Email</label>
+                    <input type="email" name="email" id="email">
+                    <div>
+                        <label>Address</label>
+                        <label for="street">Street</label>
+                        <textarea name="street" rows="8" cols="50" id="street"></textarea>
+                    </div>
+                </div>
+                <div class="form__right">
+                    <div class="updphoto">
+                        <div class="updphoto-header">
+                            <h3>Update Photo</h3>
+                        </div>
+                        <div class="updphoto-main">
+                            <p>You can upload a JPG, GIF or PNG file. Maximum file size is 16MB.</p>
+                            <button>
+                                <span class="material-icons">file_upload</span>
+                                Upload Image
+                            </button>
+                            <p>Current Photo:</p>
+                            <span class="material-icons">perm_identity</span>
+                            <p>Show my photo on publicly accessible pages</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="form__section">
+                <div class="form__left">
+                    <div>
+                        <label for="zip">Zip/Postal Code</label>
+                        <input type="text" name="zip" id="zip">
+                        <div class="form__item-row">
+                            <div>
+                                <label for="city">City</label>
+                                <input type="text" name="city" id="city">
+                            </div>
+                            <div>
+                                <label for="provincie">State/Province</label>
+                                <input type="text" name="provincie" id="provincie">
+                            </div>
+                        </div>
+                        <label for="country">Country</label>
+                        <input type="text" name="country" id="country">
+                    </div>
+                </div>
+                <div class="form__right">
+                    <label for="company">Company Name</label>
+                    <input type="text" name="company" id="company">
+                    <label for="tel">Phone</label>
+                    <input type="tel" name="tel" id="tel">        
+                    <label for="mobile">Mobile</label>
+                    <input type="tel" name="mobile" id="mobile"> 
+                    
+                </div>
+            </div>
+            <!-- FORM RIGHT BAR -->
+            <div class="form__section_full">
+                <label for="aboutme">About Me</label>
+                <textarea name="aboutme" rows="5" cols="50"></textarea>
+            </div>
+        </div>
+        <!-- FORM BUTTON -->
+        <div class="form__footer">
+            <input type="button" value="Cancel">
+            <input type="submit" value="Save">
+        </div>
+    </form>
+    
+</body>
+</html>
